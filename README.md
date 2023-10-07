@@ -2,8 +2,9 @@
 Using my own implementation of Conway's game of life to learn more about embedded software.
 ![Screenshot](arduino_snapshot.jpg)
 
-The standard Arduino Uno does not have enough on-board memory to support a 64*36 pixel display.
+The standard Arduino Uno does not have enough on-board memory to support a 128*64 pixel display.
 In my case, pictured above, I wanted to release a version of this code that works easily for the average user.
+Hence reducing the screen size to 64*36 is the largest section that we can run with a simple approach to Conway's game of life.
 
 I'll also attach a wiring diagram for those that want to get a quick setup working.
 
