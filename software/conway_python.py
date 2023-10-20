@@ -75,6 +75,8 @@ def main(square_array_size, initial_alive_cells, timesteps_to_simulate):
     print(
         f"Generating initial conditions: {initial_alive_cells} initial cells, {square_array_size}x{square_array_size} grid.."
     )
+    # Take simple array append approach, can be refactored to stream updates if enforce_rules
+    # has a yield in stead of a return.
     game_steps = []
     init_array = init_conds(arr_size=square_array_size, seed_points=initial_alive_cells)
     game_steps.append(init_array)
@@ -92,7 +94,8 @@ def main(square_array_size, initial_alive_cells, timesteps_to_simulate):
     )
     plt.xticks([], [])
     plt.yticks([], [])
-    plt.get_current_fig_manager().window.state("zoomed")
+    # This may or may not work, depending on your matplotlib renderer.
+    # plt.get_current_fig_manager().window.state("zoomed")
 
     def updatefig(j):
         # set the data in the axesimage object
@@ -110,6 +113,7 @@ def main(square_array_size, initial_alive_cells, timesteps_to_simulate):
 
 
 if __name__ == "__main__":
+    # Adjust these to your heart's content.
     square_array_size = 150
     initial_alive_cells = 100
     timesteps_to_simulate = 250
