@@ -842,7 +842,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 01ea9310-cf66-436b-9b89-1a2f4237b59e)
   )
-  (label "A2" (at 21.59 64.77 0) (fields_autoplaced)
+  (label "AREF" (at 21.59 64.77 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 09251fd4-af37-4d86-8951-1faaac710ffa)
   )
@@ -858,7 +858,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 23f0c933-49f0-4410-a8db-8b017f48dadc)
   )
-  (label "A3" (at 21.59 67.31 0) (fields_autoplaced)
+  (label "GND" (at 21.59 67.31 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 2c60ab74-0590-423b-8921-6f3212a358d2)
   )
@@ -866,11 +866,11 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 2d28c240-cad3-4002-bc24-298ec81d6b7f)
   )
-  (label "13" (at 74.93 36.83 180) (fields_autoplaced)
+  (label "SDA{slash}A4" (at 74.93 36.83 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 35bc5b35-b7b2-44d5-bbed-557f428649b2)
   )
-  (label "12" (at 74.93 39.37 180) (fields_autoplaced)
+  (label "SCL{slash}A5" (at 74.93 39.37 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 3ffaa3b1-1d78-4c7b-bdf9-f1a8019c92fd)
   )
@@ -902,7 +902,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 873d2c88-519e-482f-a3ed-2484e5f9417e)
   )
-  (label "SDA{slash}A4" (at 74.93 29.21 180) (fields_autoplaced)
+  (label "A1" (at 74.93 29.21 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 8885a9dc-224d-44c5-8601-05c1d9983e09)
   )
@@ -926,7 +926,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 9eb1eb89-b7df-4443-bf58-1d26b8980ab5)
   )
-  (label "A1" (at 21.59 62.23 0) (fields_autoplaced)
+  (label "SDA{slash}A4" (at 21.59 62.23 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid acc9991b-1bdd-4544-9a08-4037937485cb)
   )
@@ -934,11 +934,11 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid ae2c9582-b445-44bd-b371-7fc74f6cf852)
   )
-  (label "A0" (at 21.59 59.69 0) (fields_autoplaced)
+  (label "SCL{slash}A5" (at 21.59 59.69 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid ba02dc27-26a3-4648-b0aa-06b6dcaf001f)
   )
-  (label "AREF" (at 74.93 31.75 180) (fields_autoplaced)
+  (label "A2" (at 74.93 31.75 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid bbf52cf8-6d97-4499-a9ee-3657cebcdabf)
   )
@@ -958,7 +958,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid c775d4e8-c37b-4e73-90c1-1c8d36333aac)
   )
-  (label "SCL{slash}A5" (at 74.93 26.67 180) (fields_autoplaced)
+  (label "A0" (at 74.93 26.67 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid cba886fc-172a-42fe-8e4c-daace6eaef8e)
   )
@@ -982,11 +982,11 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid e4e18284-ba80-41ab-ba47-0817642496e5)
   )
-  (label "SDA{slash}A4" (at 21.59 69.85 0) (fields_autoplaced)
+  (label "13" (at 21.59 69.85 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid e7ce99b8-ca22-4c56-9e55-39d32c709f3c)
   )
-  (label "SCL{slash}A5" (at 21.59 72.39 0) (fields_autoplaced)
+  (label "12" (at 21.59 72.39 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid ea5aa60b-a25e-41a1-9e06-c7b6f957567f)
   )
@@ -1026,10 +1026,10 @@
   (symbol (lib_id "power:+3V3") (at 31.75 26.67 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000056d71aa9)
-    (property "Reference" "#PWR03" (at 31.75 30.48 0)
+    (property "Reference" "#PWR0106" (at 31.75 30.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+3.3V" (at 32.131 23.622 90)
+    (property "Value" "+3V3" (at 32.131 23.622 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "" (at 31.75 26.67 0)
@@ -1042,7 +1042,7 @@
     (instances
       (project "conway_proj"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "#PWR03") (unit 1)
+          (reference "#PWR0106") (unit 1)
         )
       )
     )
@@ -1051,7 +1051,7 @@
   (symbol (lib_id "power:+5V") (at 29.21 26.67 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000056d71d10)
-    (property "Reference" "#PWR02" (at 29.21 30.48 0)
+    (property "Reference" "#PWR0104" (at 29.21 30.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 29.5656 23.622 90)
@@ -1067,7 +1067,7 @@
     (instances
       (project "conway_proj"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR0104") (unit 1)
         )
       )
     )
@@ -1076,7 +1076,7 @@
   (symbol (lib_id "power:GND") (at 31.75 52.07 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000056d721e6)
-    (property "Reference" "#PWR04" (at 31.75 58.42 0)
+    (property "Reference" "#PWR0103" (at 31.75 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 31.75 55.88 0)
@@ -1092,7 +1092,7 @@
     (instances
       (project "conway_proj"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "#PWR04") (unit 1)
+          (reference "#PWR0103") (unit 1)
         )
       )
     )
@@ -1101,13 +1101,13 @@
   (symbol (lib_id "Connector_Generic:Conn_01x10") (at 57.15 36.83 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000056d72368)
-    (property "Reference" "J2" (at 57.15 24.13 0)
+    (property "Reference" "J3" (at 57.15 24.13 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "Digital/PWM" (at 54.61 36.83 90)
+    (property "Value" "Analog" (at 54.61 36.83 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" (at 57.15 36.83 0)
+    (property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" (at 57.15 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 57.15 36.83 0)
@@ -1126,7 +1126,7 @@
     (instances
       (project "conway_proj"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "J2") (unit 1)
+          (reference "J3") (unit 1)
         )
       )
     )
@@ -1135,7 +1135,7 @@
   (symbol (lib_id "power:GND") (at 64.77 52.07 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000056d72a3d)
-    (property "Reference" "#PWR05" (at 64.77 58.42 0)
+    (property "Reference" "#PWR0107" (at 64.77 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 64.77 55.88 0)
@@ -1151,7 +1151,7 @@
     (instances
       (project "conway_proj"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "#PWR05") (unit 1)
+          (reference "#PWR0107") (unit 1)
         )
       )
     )
@@ -1160,13 +1160,13 @@
   (symbol (lib_id "Connector_Generic:Conn_01x06") (at 39.37 64.77 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000056d72f1c)
-    (property "Reference" "J3" (at 39.37 57.15 0)
+    (property "Reference" "J2" (at 39.37 57.15 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "Analog" (at 41.91 64.77 90)
+    (property "Value" "Digital/PWM" (at 41.91 64.77 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" (at 39.37 64.77 0)
+    (property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" (at 39.37 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 39.37 64.77 0)
@@ -1181,7 +1181,7 @@
     (instances
       (project "conway_proj"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "J3") (unit 1)
+          (reference "J2") (unit 1)
         )
       )
     )
@@ -1222,7 +1222,7 @@
   (symbol (lib_id "power:GND") (at 106.68 30.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 25a646a0-3ea4-4228-9253-4083c23d37ee)
-    (property "Reference" "#PWR07" (at 106.68 36.83 0)
+    (property "Reference" "#PWR0101" (at 106.68 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 106.68 35.56 0)
@@ -1238,7 +1238,7 @@
     (instances
       (project "conway_proj"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "#PWR07") (unit 1)
+          (reference "#PWR0101") (unit 1)
         )
       )
     )
@@ -1247,7 +1247,7 @@
   (symbol (lib_id "power:+5V") (at 130.81 54.61 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 38bbb523-4c40-49b6-aced-a42d62ee912f)
-    (property "Reference" "#PWR08" (at 130.81 58.42 0)
+    (property "Reference" "#PWR0110" (at 130.81 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 130.81 49.53 0)
@@ -1263,7 +1263,7 @@
     (instances
       (project "conway_proj"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR0110") (unit 1)
         )
       )
     )
@@ -1272,7 +1272,7 @@
   (symbol (lib_id "power:VCC") (at 26.67 26.67 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5ca20c89-dc15-4322-ac65-caf5d0f5fcce)
-    (property "Reference" "#PWR01" (at 26.67 30.48 0)
+    (property "Reference" "#PWR0105" (at 26.67 30.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VCC" (at 27.051 23.622 90)
@@ -1288,7 +1288,7 @@
     (instances
       (project "conway_proj"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "#PWR01") (unit 1)
+          (reference "#PWR0105") (unit 1)
         )
       )
     )
@@ -1297,7 +1297,7 @@
   (symbol (lib_id "power:GND") (at 130.81 59.69 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a370201d-74de-4877-a002-b28327ae049c)
-    (property "Reference" "#PWR09" (at 130.81 66.04 0)
+    (property "Reference" "#PWR0109" (at 130.81 66.04 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 130.81 64.77 0)
@@ -1313,7 +1313,7 @@
     (instances
       (project "conway_proj"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "#PWR09") (unit 1)
+          (reference "#PWR0109") (unit 1)
         )
       )
     )
@@ -1322,7 +1322,7 @@
   (symbol (lib_id "power:GND") (at 90.17 46.99 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a966ebc9-77f1-475f-8925-cc27efa0e411)
-    (property "Reference" "#PWR010" (at 90.17 53.34 0)
+    (property "Reference" "#PWR0102" (at 90.17 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 90.17 52.07 0)
@@ -1338,7 +1338,7 @@
     (instances
       (project "conway_proj"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "#PWR010") (unit 1)
+          (reference "#PWR0102") (unit 1)
         )
       )
     )
@@ -1391,7 +1391,7 @@
   (symbol (lib_id "power:+5V") (at 106.68 78.74 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c04120a5-6d4b-48d9-b63c-f1da076e6d9e)
-    (property "Reference" "#PWR06" (at 106.68 82.55 0)
+    (property "Reference" "#PWR0108" (at 106.68 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 106.68 73.66 0)
@@ -1407,7 +1407,7 @@
     (instances
       (project "conway_proj"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR0108") (unit 1)
         )
       )
     )

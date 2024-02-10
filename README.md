@@ -67,7 +67,9 @@ We now also have a more elegant PCB with support for Cherry MX keys:
 I found [these](https://www.digikey.co.nz/en/products/detail/cherry-americas-llc/MX1A-E1NW/20180) 
 on Digikey that had nice 3D files. This yielded the screenshot in the Overview section.
 
-I plan to also make a 3D-printed case for this, done on onshape, the .stl will be added in `/enclosure`.
+### TODO:
+- Make a 3D-printed case for this, done on onshape, the .stl will be added in `/enclosure`.
+- Keycaps are stupdidly expensive on Digikey, at $9 each. I should 3D print some, will also add to above folder.
 
 Reference file structure:
 ```
