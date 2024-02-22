@@ -41,6 +41,23 @@ On an STM32 NULCEO-F411RE, with more memory, the full 128x64 LCD screen is easil
 I have made a shield that the screen can connect to directly using kicad 7. 
 These files can be found under `/circuitry/kicad`. 
 
+Install the Arduino library, then STM Core library from [here](https://github.com/stm32duino/Arduino_Core_STM32).
+
+Great documentation on installing STM support [here](https://github.com/stm32duino/Arduino_Core_STM32/wiki/Getting-Started).
+
+Summary of above STM install:
+
+Install the STM Cube programmer software (required), from [here](https://www.st.com/en/development-tools/stm32cubeprog.html#get-software).
+You will need to check your email for the download link to the above.
+
+You can go to File -> Preferences -> Additional boards manager URLs, paste the link in the above documentation here.
+
+Then click the Boards Manager icon, type "STM", then install "STM32 MCU based boards".
+
+We can now go to "Select Board" --> Easiest to connect the STM to your PC and check its name. For me, I selected Generic STM32F4.
+
+Finally, the code uses the U8g2lib, which can be installed with: Library Manager --> search "U8g2", install first result.
+
 <details>
 <summary> First, basic layout</summary>
 
