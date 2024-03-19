@@ -1,6 +1,13 @@
 # conway
 Using my own implementation of Conway's game of life to learn more about embedded software.
 
+# Notes to the weary traveler
+- If you want to repeat this project, first order your cherry MX keys, then check the PCB layout.
+  For me, the connector pins were on different locations than the schematic file I got. Update this afterwards.
+- It is extremely unlikely that your LCD will have the same pinouts as mine, double check this part.
+- My LCD's pins aren't in the middle of the PCB (Check the final image), if you care about this, you might want
+  to adjust the location of the pins so the buttons are nearly aligned under the screen.
+
 ## Goal/Overview
 
 - The PCB itself is supposed to just be a nice bit of desk decoration. It can all be powered
@@ -88,9 +95,20 @@ We now also have a more elegant PCB with support for Cherry MX keys:
 I found [these](https://www.digikey.co.nz/en/products/detail/cherry-americas-llc/MX1A-E1NW/20180) 
 on Digikey that had nice 3D files. This yielded the screenshot in the Overview section.
 
+## Final PCB with screen:
+
+![Funcitonal PCB](img/conway_with_pcb_and_buttons.jpg)
+
 ### TODO:
+Hardware:
 - Make a 3D-printed case for this, done on onshape, the .stl will be added in `/enclosure`.
 - Keycaps are stupdidly expensive on Digikey, at $9 each. I should 3D print some, will also add to above folder.
+
+Software:
+- Add support for the cherry keys as they don't have resistors. See [here](https://docs.arduino.cc/tutorials/generic/digital-input-pullup/).
+- Add in a button press combination to restart the simulation.
+- Weird bug where pulling the power on the card fills the screen with chinese characters? Doing a reset loads graphics properly.
+      - Honestly this is pretty funny so might not try to diagnose.
 
 Reference file structure:
 ```
