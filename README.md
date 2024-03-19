@@ -54,7 +54,11 @@ You can go to File -> Preferences -> Additional boards manager URLs, paste the l
 
 Then click the Boards Manager icon, type "STM", then install "STM32 MCU based boards".
 
-We can now go to "Select Board" --> Easiest to connect the STM to your PC and check its name. For me, I selected Generic STM32F4.
+We can now go to "Select Board" --> Easiest to connect the STM to your PC and check its name. For me, I selected Nucleo-64.
+
+Make sure you additionally select the correct board part number! This caught me out initially. This is in the "Tools" drop-down menu.
+You can plug in your STM to your PC and open the `MBED` file, which opens a webpage with details on the model number and so-on.
+If you don't have network access, your board should show up with the part number as its name as a drive in your PC.
 
 Finally, the code uses the U8g2lib, which can be installed with: Library Manager --> search "U8g2", install first result.
 
