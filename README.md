@@ -6,7 +6,7 @@ Using my own implementation of Conway's game of life to learn more about embedde
   For me, the connector pins were on different locations than the schematic file I got. Update this afterwards.
 - It is extremely unlikely that your LCD will have the same pinouts as mine, double check this part.
 - My LCD's pins aren't in the middle of the PCB (Check the final image), if you care about this, you might want
-  to adjust the location of the pins so the buttons are nearly aligned under the screen.
+  to adjust the location of the pins so the buttons are neatly aligned under the screen.
 
 ## Goal/Overview
 
