@@ -42,23 +42,23 @@ int timesteps = 1; // Start at 1 since zero is the initial random grid.
 
 // Map the button and LED to the appropriate pins
 const int green_button_pin = 2; 
-const int green_led_pin = 6;
+// const int green_led_pin = 6;
 // Set their initial states, LEDs start powered off.
 // Buttons are considered active when pressed.
-int green_led_state = HIGH;
+// int green_led_state = HIGH;
 int green_button_state;
 int last_green_button_state = LOW;
 
 // Repeat for other buttons and LEDs
 const int white_button_pin = 3; 
-const int white_led_pin = 5;
-int white_led_state = HIGH;
+// const int white_led_pin = 5;
+// int white_led_state = HIGH;
 int white_button_state;
 int last_white_button_state = LOW;
 
 const int red_button_pin = 4; 
-const int red_led_pin = 7;
-int red_led_state = HIGH;
+// const int red_led_pin = 7;
+// int red_led_state = HIGH;
 int red_button_state;
 int last_red_button_state = LOW;
 
@@ -114,7 +114,7 @@ void handle_menu() {
           // Update Conway rules:
           selected_option = DEFAULT_RULES;
           // set the LED:
-          digitalWrite(green_led_pin, !green_led_state);
+          // digitalWrite(green_led_pin, !green_led_state);
           menu_displayed = false; // want to exit the loop if a button is pressed.
           u8g2.clearBuffer();
           u8g2.drawStr(10, 32, "Selected default rules [green]");
@@ -136,7 +136,7 @@ void handle_menu() {
         white_button_state = white_reading;
         if (white_button_state == HIGH) {
           selected_option = MORLEY;
-          digitalWrite(white_led_pin, !white_led_state);
+          // digitalWrite(white_led_pin, !white_led_state);
           menu_displayed = false;
           u8g2.clearBuffer();
           u8g2.drawStr(10, 32, "Selected Morley's Miracle [white]");
@@ -157,7 +157,7 @@ void handle_menu() {
         red_button_state = red_reading;
         if (red_button_state == HIGH) {
           selected_option = HIGHLIFE;
-          digitalWrite(red_led_pin, !red_led_state);
+          // digitalWrite(red_led_pin, !red_led_state);
           menu_displayed = false;
           u8g2.clearBuffer();
           u8g2.drawStr(10, 32, "Selected Highlife [red]");
@@ -253,18 +253,18 @@ void setup(void) {
 
   // Set up button pins as inputs, LEDs as outputs
   pinMode(green_button_pin, INPUT);
-  pinMode(green_led_pin, OUTPUT);
+  // pinMode(green_led_pin, OUTPUT);
 
   pinMode(white_button_pin, INPUT);
-  pinMode(white_led_pin, OUTPUT);
+  // pinMode(white_led_pin, OUTPUT);
 
   pinMode(red_button_pin, INPUT);
-  pinMode(red_led_pin, OUTPUT);
+  // pinMode(red_led_pin, OUTPUT);
 
   // Set the LEDs to be off initially.
-  digitalWrite(green_led_pin, green_led_state);
-  digitalWrite(white_led_pin, white_led_state);
-  digitalWrite(red_led_pin, red_led_state);
+  // digitalWrite(green_led_pin, green_led_state);
+  // digitalWrite(white_led_pin, white_led_state);
+  // digitalWrite(red_led_pin, red_led_state);
 }
 
 void loop(void) {
